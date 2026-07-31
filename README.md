@@ -31,5 +31,5 @@ npm run test:sites
 - 已完成响应式首页
 - 已完成文章搜索和主题筛选
 - 已完成桌面端与移动端视觉验证
-- GitHub 仓库：`https://github.com/techgaoshou/GaoXTech`
+- GitHub 仓库：`https://github.com/GaoXTech/GaoXTech`
 - 尚未绑定 `gaoxtech.com` 或生产托管
