@@ -459,9 +459,9 @@ img {
 }
 
 .paths,
-.articles,
 .toolbox,
-#about {
+#about,
+.path-item {
   scroll-margin-top: 110px;
 }
 
@@ -505,17 +505,10 @@ img {
   border-right: 1px solid var(--line);
   background: transparent;
   text-align: left;
-  cursor: pointer;
-  transition: background 180ms ease;
 }
 
 .path-item:last-child {
   border-right: 0;
-}
-
-.path-item:hover,
-.path-item:focus-visible {
-  background: var(--hover-surface);
 }
 
 .path-item > svg {
@@ -963,9 +956,9 @@ img {
   }
 
   .paths,
-  .articles,
   .toolbox,
-  #about {
+  #about,
+  .path-item {
     scroll-margin-top: 90px;
   }
 

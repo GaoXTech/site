@@ -13,10 +13,11 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - The selected homepage direction is a dark, immersive technology publication with deep navy surfaces, electric-blue signals, and restrained yellow accents for investing content.
 - Use `/public/assets/gaoxtech-logo.png`, copied from the workspace `logo.png`, as the single logo asset everywhere: header, hero, footer, favicon, and touch icon.
 - Whenever the visible brand name “高手科技” appears, pair it with the explanatory line “高老师手把手带你探索科技”.
-- The three primary editorial paths are AI 实战, 科技前沿, and 美股研究.
+- The three primary content directions are 出海指南, 美股研究, and 实用工具.
 - Keep the site accessible from mainland China: avoid runtime dependencies on Google Fonts, blocked CDNs, or third-party image hosts.
 - The site should stay expandable for articles, interactive tools, and later dynamic data without changing the core visual language.
 - Always preserve a user-controlled dark/light theme switch. The light theme should use a soft blue-gray technology palette rather than stark pure white.
 - Treat mobile responsiveness as a first-class requirement because a large share of readers will open the site on phones.
 - In the header brand lockup, keep “高手科技” dominant while making “GaoXTech” and “高老师手把手带你探索科技” comfortably legible with moderate contrast and weight, including on narrow mobile screens.
-- Keep the primary navigation beginner-friendly and direct: 首页, 出海指南, 美股研究, 实用工具, 关于. Use “实用工具” as the broad entry for downloads, online calculators, templates, and prompt resources.
+- Keep the primary navigation beginner-friendly and direct: 首页, 出海指南, 美股研究, 实用工具, 关于高老师. Use “实用工具” as the broad entry for downloads, online calculators, templates, and prompt resources.
+- Do not publish placeholder articles, fabricated dates, filters, or “阅读全文” links. Add the article section only after real articles are ready.
