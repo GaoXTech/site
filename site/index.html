@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="高手科技 GaoXTech，高老师手把手带你探索科技：AI 实战、科技前沿与美股研究。"
+    />
+    <meta name="theme-color" content="#020811" />
+    <link rel="icon" type="image/png" href="/assets/gaoxtech-logo.png" />
+    <link rel="apple-touch-icon" href="/assets/gaoxtech-logo.png" />
+    <title>高手科技｜高老师手把手带你探索科技</title>
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("gaoxtech-theme");
+        const preferredTheme =
+          savedTheme ||
+          (matchMedia("(prefers-color-scheme: light)").matches
+            ? "light"
+            : "dark");
+        document.documentElement.dataset.theme = preferredTheme;
+        document.documentElement.style.colorScheme = preferredTheme;
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
