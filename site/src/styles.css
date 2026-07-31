@@ -20,7 +20,7 @@
   --header-bg: rgba(2, 8, 17, 0.88);
   --header-line: rgba(147, 181, 224, 0.13);
   --nav-text: #c9d3df;
-  --brand-secondary: #cad6e6;
+  --brand-secondary: #d6e0ec;
   --panel-bg: #071321;
   --panel-shadow: rgba(0, 0, 0, 0.46);
   --hero-bg: #020811;
@@ -52,7 +52,7 @@
   --header-bg: rgba(246, 249, 253, 0.9);
   --header-line: rgba(30, 72, 117, 0.13);
   --nav-text: #516277;
-  --brand-secondary: #5f7085;
+  --brand-secondary: #4f647c;
   --panel-bg: #ffffff;
   --panel-shadow: rgba(33, 65, 101, 0.18);
   --hero-bg: #eaf2fb;
@@ -172,15 +172,17 @@ img {
 
 .brand-title small {
   color: var(--brand-secondary);
-  font-size: 12px;
-  letter-spacing: 0.08em;
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: 0.065em;
 }
 
 .brand-tagline {
   color: var(--brand-secondary);
-  font-size: 10px;
-  line-height: 1.25;
-  letter-spacing: 0.04em;
+  font-size: 11px;
+  font-weight: 550;
+  line-height: 1.3;
+  letter-spacing: 0.025em;
   white-space: nowrap;
 }
 
@@ -894,12 +896,12 @@ img {
   }
 
   .brand-title small {
-    font-size: 9px;
-    letter-spacing: 0.04em;
+    font-size: 10px;
+    letter-spacing: 0.025em;
   }
 
   .brand-tagline {
-    font-size: 9px;
+    font-size: 9.5px;
     letter-spacing: 0;
   }
 
@@ -1052,12 +1054,8 @@ img {
     font-size: 14px;
   }
 
-  .brand-title small {
-    display: none;
-  }
-
   .brand-tagline {
-    font-size: 8.5px;
+    font-size: 9.5px;
   }
 
   .header-actions {

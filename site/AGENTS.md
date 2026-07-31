@@ -18,3 +18,4 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - The site should stay expandable for articles, interactive tools, and later dynamic data without changing the core visual language.
 - Always preserve a user-controlled dark/light theme switch. The light theme should use a soft blue-gray technology palette rather than stark pure white.
 - Treat mobile responsiveness as a first-class requirement because a large share of readers will open the site on phones.
+- In the header brand lockup, keep “高手科技” dominant while making “GaoXTech” and “高老师手把手带你探索科技” comfortably legible with moderate contrast and weight, including on narrow mobile screens.
