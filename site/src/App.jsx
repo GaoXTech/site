@@ -166,10 +166,9 @@ export function App() {
           <a className="is-active" href="#top">
             首页
           </a>
-          <a href="#paths">AI 实战</a>
-          <a href="#paths">科技前沿</a>
+          <a href="#paths">出海指南</a>
           <a href="#paths">美股研究</a>
-          <a href="#toolbox">工具箱</a>
+          <a href="#toolbox">实用工具</a>
           <a href="#about">关于</a>
         </nav>
 
@@ -237,13 +236,13 @@ export function App() {
               首页
             </button>
             <button type="button" onClick={() => navigate("paths")}>
-              探索路径
+              出海指南
             </button>
             <button type="button" onClick={() => navigate("articles")}>
-              最新文章
+              美股研究
             </button>
             <button type="button" onClick={() => navigate("toolbox")}>
-              工具箱
+              实用工具
             </button>
             <button type="button" onClick={() => navigate("about")}>
               关于
