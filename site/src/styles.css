@@ -140,6 +140,10 @@ img {
   width: fit-content;
 }
 
+.brand picture {
+  display: contents;
+}
+
 .brand img {
   width: 48px;
   height: 48px;
@@ -301,7 +305,10 @@ img {
   min-height: 920px;
   padding-top: 82px;
   background-color: var(--hero-bg);
-  background-image: url("/assets/hero-data-wave.png");
+  background-image: image-set(
+    url("/assets/hero-data-wave.avif") type("image/avif"),
+    url("/assets/hero-data-wave.png") type("image/png")
+  );
   background-position: center;
   background-size: cover;
   transition: background-color 220ms ease;
@@ -436,6 +443,12 @@ img {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.hero-portrait picture {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .section {
@@ -615,6 +628,11 @@ img {
   padding: 46px 0;
 }
 
+.article picture {
+  display: block;
+  width: 100%;
+}
+
 .article img {
   width: 100%;
   height: 170px;
@@ -766,6 +784,10 @@ img {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+.footer-brand picture {
+  display: contents;
 }
 
 .footer-brand img {

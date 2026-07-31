@@ -42,7 +42,8 @@ const articles = [
     title: "AI Agent 时代来了：从工具到自主工作流的关键跃迁",
     excerpt:
       "拆解 AI Agent 的核心能力与应用落地路径，掌握构建属于你自己的智能助手的第一步。",
-    image: "/assets/article-ai-agent.png",
+    image: "/assets/article-ai-agent.avif",
+    imageFallback: "/assets/article-ai-agent.jpg",
     lead: true,
   },
   {
@@ -52,7 +53,8 @@ const articles = [
     date: "2026-07-29",
     title: "量子计算的实用化进程：我们现在处于哪个阶段？",
     excerpt: "从技术路线、产业格局到潜在应用，理性看待量子计算的进展与挑战。",
-    image: "/assets/article-quantum.png",
+    image: "/assets/article-quantum.avif",
+    imageFallback: "/assets/article-quantum.jpg",
   },
   {
     id: "article-value",
@@ -61,7 +63,8 @@ const articles = [
     date: "2026-07-27",
     title: "如何评估一家公司的长期投资价值？",
     excerpt: "结合商业模式、护城河与管理层，建立系统化的投资分析框架。",
-    image: "/assets/article-wall-street.png",
+    image: "/assets/article-wall-street.avif",
+    imageFallback: "/assets/article-wall-street.jpg",
   },
 ];
 
@@ -137,7 +140,19 @@ export function App() {
           href="#top"
           aria-label="高手科技首页，高老师手把手带你探索科技"
         >
-          <img src="/assets/gaoxtech-logo.png" alt="" />
+          <picture>
+            <source
+              type="image/avif"
+              srcSet="/assets/gaoxtech-logo-128.avif"
+            />
+            <img
+              src="/assets/gaoxtech-logo-128.jpg"
+              width="128"
+              height="128"
+              alt=""
+              decoding="async"
+            />
+          </picture>
           <span className="brand-copy">
             <span className="brand-title">
               <strong>高手科技</strong>
@@ -277,10 +292,23 @@ export function App() {
               className="hero-portrait"
               aria-label="高手科技，高老师手把手带你探索科技"
             >
-              <img
-                src="/assets/gaoxtech-logo.png"
-                alt="高手科技，高老师手把手带你探索科技"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcSet="/assets/gaoxtech-logo-640.avif 640w, /assets/gaoxtech-logo-1080.avif 1080w"
+                  sizes="(max-width: 720px) 82vw, (max-width: 1400px) 42vw, 560px"
+                />
+                <img
+                  src="/assets/gaoxtech-logo-640.jpg"
+                  srcSet="/assets/gaoxtech-logo-640.jpg 640w, /assets/gaoxtech-logo-1080.jpg 1080w"
+                  sizes="(max-width: 720px) 82vw, (max-width: 1400px) 42vw, 560px"
+                  width="1080"
+                  height="1080"
+                  alt="高手科技，高老师手把手带你探索科技"
+                  fetchPriority="high"
+                  decoding="async"
+                />
+              </picture>
             </div>
           </div>
         </section>
@@ -351,7 +379,15 @@ export function App() {
                   id={article.id}
                   key={article.id}
                 >
-                  <img src={article.image} alt="" />
+                  <picture>
+                    <source type="image/avif" srcSet={article.image} />
+                    <img
+                      src={article.imageFallback}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
                   <div className="article-copy">
                     <div className="article-meta">
                       <span className={`category category-${article.topic}`}>
@@ -407,7 +443,20 @@ export function App() {
 
       <footer className="site-footer" id="about">
         <div className="footer-brand">
-          <img src="/assets/gaoxtech-logo.png" alt="" />
+          <picture>
+            <source
+              type="image/avif"
+              srcSet="/assets/gaoxtech-logo-128.avif"
+            />
+            <img
+              src="/assets/gaoxtech-logo-128.jpg"
+              width="128"
+              height="128"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
           <div>
             <strong>高手科技 · GaoXTech</strong>
             <p>高老师手把手带你探索科技。</p>
